@@ -1,24 +1,93 @@
 section {
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Form */
+  width: 100%;
+
+  /* DEBUG */
+  /*background-color: blue;*/
+}
+
+.wrapper {
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+
+  /* Form */
+  width: 80%;
+  padding: 1em;
+
+  /* DEBUG */
+  /*background-color: yellow;*/
+}
+
+.cards-row {
   display: flex;
   flex-direction: row;
-  background-color: red;
-  justify-content: center;
-  padding: 0.5em;
+  width: 100%;
+
+  /* DEBUG */
+  /*background-color: red;*/
 }
 
-.container {
-  background-color: yellow;
-  width: 80%;
-}
+.card-wrapper {
+  /* Alignment */
+  flex-grow: 1;
 
-.title-area {
-  padding: 1em;
+  /* Space */
+  padding:1em;
+
+  /* DEBUG */
+  /*background-color: aqua;*/
 }
 
 .card {
-  padding: 1em;
-  background-color: #afafaf;
-  .header-text {
-    font-weight: bolder;
-  }
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+
+  /* Color */
+  background-color: #ececec;
+}
+
+.card img {
+  flex: 0.5;
+  order:0;
+}
+
+.card-information-wrapper {
+  flex: 0.5;
+  order:1;
+  padding:1em;
+
+  /* DEBUG */
+  /*background-color: blueviolet;*/
+}
+
+.card-wide {
+  /* Alignment OVERRIDE */
+  flex-direction: row;
+}
+
+.card-bold-text {
+  font-weight: bold;
+}
+
+.card-controls {
+  order:2;
+  flex: 0.05;
+
+  /* DEBUG */
+  /*background-color: pink;*/
+}
+
+.header-text-wrapper {
+  /* Alignment */
+  padding:1em;
+
+  /* DEBUG */
+  /*background-color: brown;*/
 }
