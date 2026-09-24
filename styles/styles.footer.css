@@ -8,7 +8,7 @@
     background-color: red;
     display:flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .box2 li,h5{
@@ -16,22 +16,22 @@
 }
 
 .box1 ol{
-    box-sizing: border-box;
+    /*box-sizing: border-box;
     display:flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: column;
-    /*background-color: aqua;*/
+    background-color: aqua;*/
 
     
 }
 .box2 ol{
-    box-sizing: border-box;
+    /*box-sizing: border-box;
     display:flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    flex-direction: column;
-    /*background-color: red;*/
+    flex-direction: column;*/
+
 
     
 }
