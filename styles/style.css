@@ -102,3 +102,8 @@ nav {
   padding: 15px 30px;
   border-radius: 20%;
 }
+
+/* Section */
+section {
+  width: 100%;
+}
