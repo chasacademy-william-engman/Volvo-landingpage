@@ -1,0 +1,38 @@
+.footer {
+    /* background-color: black;
+    color: white; */
+}
+
+
+.box1 li,h5{
+    background-color: red;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box2 li,h5{
+    background-color: blue;
+}
+
+.box1 ol{
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    /*background-color: aqua;*/
+
+    
+}
+.box2 ol{
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    /*background-color: red;*/
+
+    
+}
+
