@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color */
+  --button-hover: rgb(243, 243, 243);
+  --nav-color-text: black;
+
+  /* Fonts */
+  --v-font-sans-family:
+    "Volvo Centum", "Helvetica Neue", "Helvetica", "Noto Sans", "Segoe UI",
+    "Arial", sans-serif;
+  --v-font-broad-family:
+    "Volvo Broad Pro", "Volvo Broad", "Arial Black", sans-serif;
+  --v-font-mono-family: monospace;
+}
+
+body {
+  font-family: var(--v-font-sans-family);
+}
+
+header {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: white;
+  z-index: 999;
+}
+
+img {
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--nav-color-text);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0px 60px;
+}
+
+.nav-img {
+  width: 105px;
+}
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding-left: 0px;
+}
+.nav-container {
+  display: flex;
+  gap: 20px;
+}
+.nav-links {
+  padding: 10px;
+}
+.nav-links:hover {
+  background-color: var(--button-hover);
+}
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button-icon {
+  border: none;
+  background: none;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.main-picture {
+  position: relative;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.picture-text {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  font-size: 23px;
+}
+.picture-button {
+  border: none;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 20%;
+}
