@@ -1,0 +1,131 @@
+section {
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Form */
+  width: 100%;
+
+  /* DEBUG */
+  /*background-color: blue;*/
+}
+
+.wrapper {
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+
+  /* Form */
+  width: 80%;
+  padding: 1em;
+
+  /* DEBUG */
+  /*background-color: yellow;*/
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  margin: 1em 0 1em 0;
+
+  /* DEBUG */
+  /*background-color: red;*/
+}
+
+.card-wrapper {
+  /* Alignment */
+  flex-grow: 1;
+
+  /* Space */
+  padding:1em;
+
+  /* DEBUG */
+  /*background-color: aqua;*/
+}
+
+.card {
+  /* Alignment */
+  display: flex;
+  flex-direction: column;
+  height:100%;
+
+  /* Animation */
+  transition: 0.2s;
+
+  /* Color */
+  background-color: var(--card-bg-color);
+}
+
+.card:hover {
+  background-color: var(--card-highlight-bg-color);
+}
+
+.card img {
+  flex: 0.5;
+  order:0;
+}
+
+.card-text-wrapper {
+  flex: 0.5;
+  order:1;
+  padding:1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* DEBUG */
+  /*background-color: blueviolet;*/
+}
+
+.card-text-wrapper p {
+  margin:10px 0px 10px 0px;
+}
+
+.card-wide {
+  /* Alignment OVERRIDE */
+  flex-direction: row;
+}
+
+.card-wide-invert {
+  flex-direction: row-reverse;
+}
+
+.card-header-text {
+  font-weight: bold;
+}
+
+.card-subheader-text {
+  color: var(--subheader-text-color);
+}
+
+.card-controls {
+  order:2;
+  flex: 0.1;
+
+  /* DEBUG */
+  /*background-color: pink;*/
+}
+
+.card-link-text {
+  text-decoration: underline;
+}
+
+.text-control-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-text-wrapper {
+  /* Alignment */
+  padding: 1em;
+
+  /* DEBUG */
+  /*background-color: brown;*/
+}
+
+.header-text {
+  font-weight: lighter;
+}

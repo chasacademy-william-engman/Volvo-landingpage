@@ -16,6 +16,11 @@
   --v-font-broad-family:
     "Volvo Broad Pro", "Volvo Broad", "Arial Black", sans-serif;
   --v-font-mono-family: monospace;
+
+  /* Kort-specifik styling */
+  --subheader-text-color: rgb(165, 164, 164);
+  --card-bg-color: rgb(250, 250, 250);
+  --card-highlight-bg-color: rgb(243, 243, 243);
 }
 
 body {
@@ -269,4 +274,9 @@ nav {
   margin-top: 20px;
   color: white;
   font-size: 16px;
+}
+
+/* Section */
+section {
+  width: 100%;
 }
