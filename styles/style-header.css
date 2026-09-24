@@ -7,6 +7,7 @@
   /* Color */
   --button-hover: rgb(243, 243, 243);
   --nav-color-text: black;
+  --light-gray-volvo: rgb(246, 246, 246);
 
   /* Fonts */
   --v-font-sans-family:
@@ -86,19 +87,186 @@ nav {
 .main-picture {
   position: relative;
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--v-font-sans-family);
 }
-
+.main-pic {
+  background-image:
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/blt171651649d54c883/6aa278a3df9bb97485e1a415/EX40_27.5_STE_1602_2560x1096t.jpg?branch=prod_alias&quality=85&format=auto&iar=0&w=3840");
+  width: 100%;
+  height: 657px;
+  background-size: cover;
+  color: white;
+}
 .picture-text {
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 20%;
   transform: translate(-50%, -50%);
-  font-size: 23px;
+  font-size: 25px;
+  font-weight: 100;
 }
 .picture-button {
   border: none;
   background-color: white;
   padding: 15px 30px;
-  border-radius: 20%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.volvo-grid {
+  padding: 60px;
+}
+
+.nav-2 {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 50px;
+
+  .nav-2-items {
+    background-color: var(--light-gray-volvo);
+    flex: 1;
+    height: 70px;
+    padding: 20px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  div:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+  }
+
+  .nav-2-arrow {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.car-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 600px;
+  grid-template-areas:
+    "volvo1 volvo2"
+    "volvo3 volvo3";
+  gap: 32px;
+}
+
+.volvo-1 {
+  display: flex;
+  flex-direction: column;
+
+  grid-area: volvo1;
+  a {
+    text-decoration: underline;
+  }
+}
+.volvo-2 {
+  grid-area: volvo2;
+}
+.volvo-3 {
+  grid-area: volvo3;
+}
+
+.card-box {
+  position: relative;
+  overflow: hidden;
+}
+.card-box img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texten ligger ovanpå bilden */
+.card-box-text {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  right: 24px;
+  color: white;
+}
+.card-box-text a {
+  color: white;
+  text-decoration: underline;
+}
+
+.volvo-3 {
+  position: relative;
+  background-image:
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("https://www.volvocars.com/images/cs/v3/assets/blt618dcb179a89242d/bltbbadae7834a7a9a8/69a95b671a826d8383746428/EX60_Accessory_Roof_Carrier-21-9.jpg?branch=prod_alias&quality=85&format=auto&iar=0&w=3840");
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 20px 0px;
+  }
+}
+
+.picture-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.carousel {
+  background-color: var(--light-gray-volvo);
+  height: auto;
+  padding: 35px 45px;
+  margin-top: 30px;
+
+  p {
+    padding-top: 10px;
+  }
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .black-line {
+    width: 100%;
+    height: 3px;
+    background-color: lightgray;
+
+    .black-innerline {
+      width: 12%;
+      height: 3px;
+      background-color: rgb(0, 0, 0);
+    }
+  }
+}
+.carousel-button {
+  border: none;
+  background-color: black;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
 }
